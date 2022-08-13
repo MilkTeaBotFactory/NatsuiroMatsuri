@@ -15,7 +15,7 @@ logger.setDate(() => new Date().toLocaleString(undefined, {
 	minute: '2-digit',
 	second: '2-digit',
 }).replace(/\//g, '-'));
-// logger.setLevel('info');
+logger.setLevel('info');
 
 // Environment variables
 dotenv.config();
