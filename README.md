@@ -12,7 +12,7 @@ Events status:
 
 |          Feature          | Done or Not |
 |:-------------------------:|:-----------:|
-| Interaction/SlashCommands |   &check;   |
+| Interaction/SlashCommands |             |
 |    Interaction/Buttons    |   &mdash;   |
 |  Interaction/SelectMenus  |   &mdash;   |
 |    Interaction/Modals     |             |
@@ -26,7 +26,7 @@ Commands status:
 |:--------------:|:-----------:|
 | Admin/Shutdown |             |
 |   Core/Help    |             |
-|   Utils/Ping   |   &check;   |
+|   Utils/Ping   |             |
 
 Message events status:
 
