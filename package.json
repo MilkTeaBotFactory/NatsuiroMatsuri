@@ -1,24 +1,29 @@
 {
-  "name": "matsuri",
-  "version": "1.0.0",
-  "description": "A bot for 祭單推祭絲總部",
-  "main": "index.js",
-  "scripts": {
-    "full-setup": "clear;deploy-commands.js;bot.js",
-    "update-command": "clear;deploy-commands.js;",
-    "run-bot": "clear;node bot.js",
-    "test-bot": "clear;nodemon bot.js"
-  },
-  "keywords": [],
-  "author": "音羽みのり <otohaminori@users.noreply.github.com> (https://projectcsj.github.io/)",
-  "license": "GPL-3.0",
-  "dependencies": {
-    "@discordjs/rest": "^1.0.1",
-    "discord.js": "^14.2.0",
-    "dotenv": "^16.0.1",
-    "node-color-log": "^9.0.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.21.0"
-  }
+	"name":            "matsuri",
+	"version":         "1.0.0",
+	"description":     "A bot for 祭單推祭絲總部",
+	"main":            "index.js",
+	"scripts":         {
+		"full-setup":     "clear;deploy-commands.js;bot.js",
+		"update-command": "clear;deploy-commands.js;",
+		"run-bot":        "clear;node bot.js",
+		"test-bot":       "clear;nodemon bot.js",
+		"lint":           "eslint --fix *.js;eslint --fix Events/*/*.js;"
+	},
+	"pre-commit":      [
+		"lint"
+	],
+	"keywords":        [],
+	"author":          "音羽みのり <otohaminori@users.noreply.github.com> (https://projectcsj.github.io/)",
+	"license":         "GPL-3.0",
+	"dependencies":    {
+		"@discordjs/rest": "^1.0.1",
+		"discord.js":      "^14.2.0",
+		"dotenv":          "^16.0.1",
+		"node-color-log":  "^9.0.0"
+	},
+	"devDependencies": {
+		"eslint":     "^8.21.0",
+		"pre-commit": "^1.2.2"
+	}
 }
