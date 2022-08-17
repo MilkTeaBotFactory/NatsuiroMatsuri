@@ -18,7 +18,9 @@ Events status:
 |    Interaction/Modals     |             |
 | Interaction/ContextMenus  |   &mdash;   |
 |      MessageCreates       |             |
-|     Ready/Processing      |   &check;   |
+|  Ready/01_SetupPresence   |   &check;   |
+|   Ready/02_LoginLogger    |   &check;   |
+|  Ready/03_ListAllGuilds   |   &check;   |
 
 Commands status:
 

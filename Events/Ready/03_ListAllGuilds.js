@@ -9,26 +9,12 @@ logger.setDate(() => new Date().toLocaleString(undefined, {
 	minute: "2-digit",
 	second: "2-digit",
 }).replace(/\//g, "-"));
-// logger.setLevel('info');
+logger.setLevel("info");
 
 module.exports = {
 	name: "ready",
 	once: true,
 	execute(client) {
-		client.user.setPresence(
-			{
-				activities: [
-					{
-						name: "まつりとサラ",
-						type: 0
-					}
-				],
-				status:     "idle"
-			}
-		);
-		logger.debug(`⏳️Trying to login system with ${client.user.tag}...`);
-		logger.debug("✔️Logged in success!");
-		logger.info(`Logged in user:${client.user.tag}!`);
 		const Guilds = client.guilds.cache.map(guild => guild.name);
 		logger.info("Here's all of guilds I already join.");
 		for (const guildsKey in Guilds) {
