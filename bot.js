@@ -29,9 +29,22 @@ const client = new Client(
 			]
 	}
 );
-
-// TODO:Command Handler
-
+/*
+// Command handler
+const commandFolder = fs.readdirSync("./Commands");
+for (const Folder of commandFolder) {
+	const commandFiles = fs.readdirSync(`./Commands/${Folder}`).filter((file) => file.endsWith(".js"));
+	for (const Files of commandFiles) {
+		const event = require(`./Commands/${Folder}/${Files}`);
+		if (event.once) {
+			client.once(event.name, (...args) => event.execute(...args));
+		}
+		else {
+			client.on(event.name, (...args) => event.execute(...args));
+		}
+	}
+}
+*/
 // Event handler
 const eventFolder = fs.readdirSync("./Events");
 for (const Folder of eventFolder) {

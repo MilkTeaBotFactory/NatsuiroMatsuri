@@ -20,14 +20,19 @@ module.exports = {
 				activities: [
 					{
 						name: "まつりとサラ",
-						type: "PLAYING",
+						type: 0
 					}
 				],
-				status:     "online",
+				status:     "idle"
 			}
 		);
 		logger.debug(`⏳️Trying to login system with ${client.user.tag}...`);
 		logger.debug("✔️Logged in success!");
 		logger.info(`Logged in user:${client.user.tag}!`);
+		const Guilds = client.guilds.cache.map(guild => guild.name);
+		logger.info("Here's all of guilds I already join.");
+		for (const guildsKey in Guilds) {
+			logger.info(`・${Guilds[guildsKey]}`);
+		}
 	},
 };

@@ -18,7 +18,7 @@ Events status:
 |    Interaction/Modals     |             |
 | Interaction/ContextMenus  |   &mdash;   |
 |      MessageCreates       |             |
-|       Ready/Checker       |   &check;   |
+|     Ready/Processing      |   &check;   |
 
 Commands status:
 
